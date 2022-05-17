@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\..\\xampp\\htdocs\\CRMS"
+		},
+		{
+			"path": "..\\..\\..\\..\\xampp\\htdocs\\CMP"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "CRMS"
+	}
+}

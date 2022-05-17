@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS examples</title>
+    <style type="text/css"> /*this is embedding style sheet*/
+        h1{  /* write the tag name here followed by {} just like in css file to target a specific tag*/       
+            color:red;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        h2{
+            color: blue;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-decoration: underline;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="styling_sheet.css">
+</head>
+<body>
+    <!-- <h1 style="color: red; font-family:Georgia, 'Times New Roman', Times, serif;">This is frist header</h1> -->
+    <!-- this is inline style sheet. better to embed it onto the header section -->
+    <h1 style="text-decoration: underline;" >This is h1 header</h1>
+    <!-- you can use inline styling for for very specific lines like this. inline styling>embedded styling -->
+    <h1>This is Second header</h1>
+    <h2>This is h2 header</h2>
+    <h3>This is h3 header styling from linked styling sheet</h3>
+</body>
+</html>

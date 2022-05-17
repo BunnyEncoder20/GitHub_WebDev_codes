@@ -1,0 +1,271 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.header
+{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(49, 72, 143, 0.7),rgba(49, 72, 143, 0.7)),url('../images/bg2.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3% 0%;
+    align-items: center;
+}
+nav img{
+    width: 120px;
+}
+
+.nav-links
+{
+    flex: 1;   /*to occupy all of the space on the row*/
+    text-align: right;
+}
+.nav_links ul li 
+{
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+    position: relative;
+}
+
+.nav_links ul li a 
+{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav_links ul li::after
+{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.3s;        
+    cursor: pointer;
+}
+
+.nav_links ul li:hover::after
+{
+    width: 100%;
+}
+
+#sidebar
+{
+    display: block;
+    position: fixed;
+    width: 30%;
+    height: 100%;
+    background-color: black;
+}
+#sidebar ul li{
+    font-size: 25px;
+    padding: 14px;
+    border-bottom: 2px solid gray;
+    text-align: center;
+}
+#sidebar ul li a{
+    color: white;
+}
+
+.toggle_btn
+{
+    position: absolute;
+    left: 120%;
+    top: 15px;
+}
+
+.text_box
+{
+    width: 100%;
+    color: white;
+    position: absolute ;
+    top: 50%;
+    /* left: 50%; */
+    /* transform: translate(-50%,-50%); */
+    text-align: center;
+    line-height: 1.5;
+}
+.text_box h1
+{
+    font-size: 70px;
+}
+.text_box p
+{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: white;
+}
+
+.search_btn
+{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 35px;
+    padding: 12px 20px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.search_btn:hover
+{
+    border: 5px solid rgb(179, 38, 13);
+    background: rgb(52, 140, 223);
+    transition: 0.5s;
+}
+
+
+/* course section */
+.course
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.course_col 
+{
+    flex-basis: 32%;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    height: 501px;
+}
+.course_col img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.cname
+{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.cname:hover
+{
+    background: rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+.cname h3
+{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 50px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s;
+}
+.cname:hover h3 
+{
+    bottom: 45%;
+    opacity: 1;
+}
+
+
+
+/* notes section */
+.notes
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+}
+
+h1
+{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p
+{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.notes_col
+{
+    flex-basis: 31%;
+    background: rgb(203, 232, 241);
+    border-radius: 10px;
+    margin-bottom: 20%;
+    position: relative;
+    overflow: hidden;
+}
+
+h3
+{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.notes_col:hover
+{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+
+
+
+/* Search for a topic */
+.search
+{
+    margin: 100px auto;
+    width: 80%; 
+    height: 450px;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../images/search.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+input
+{
+    border: 3px solid #32e17c;
+    height: 60px;
+    width: 500px;
+    border-radius: 50px;
+    padding: 0px 40px;
+}
